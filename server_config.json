@@ -21,9 +21,15 @@
       "refresh_time" : 60,
       "logins_until_cleanup" : 30,
       "method_dictionary": {
-        "enabled" : false,
-        "auths" : [],
-        "groups" : {}
+        "enabled" : true,
+        "auths" : [
+            "admin:djHYulsgRFylszy",
+            "test:test"
+        ],
+        "groups" : {
+            "admin" : ["admin", "guest"],
+            "test" : ["guest"]
+        }
       },
       "method_ldap": {
         "enabled" : false,

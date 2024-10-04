@@ -1,0 +1,10 @@
+services:
+  codechekcer:
+    image: codechecker
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    ports:
+      - 8555:8555
+    volumes:
+      - ./:/root/.codechecker/
